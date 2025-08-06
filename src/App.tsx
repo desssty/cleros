@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
-const MainPage = lazy(() => import("./MainPage"));
+const MainPage = lazy(() => import("pages/MainPage"));
 
 export default function App() {
   return (
