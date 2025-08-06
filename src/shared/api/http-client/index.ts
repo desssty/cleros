@@ -1,4 +1,4 @@
-import axios, { AxiosInstance } from "axios";
+import axios, { type AxiosInstance } from "axios";
 import type { HttpRequestConfig, HttpResponse } from "./types";
 
 const BASE_URL = "http://localhost:3000";

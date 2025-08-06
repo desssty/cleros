@@ -19,3 +19,31 @@
 - npm install @nivo/core @nivo/bar
 - npm install reactflow
 - npm install d3
+
+```bash
+src/
+├── shared/
+│   └── api/
+│       ├── http-client/
+│       │   ├── index.ts
+│       │   └── types.ts
+│       ├── note/
+│       │   ├── index.ts      # api functions (fetchNotes, etc)
+│       │   └── types.ts      # DTO types
+│       └── activity/
+│           └── ...
+├── entities/
+│   ├── note/
+│   │   ├── model/
+│   │   │   ├── api.ts       # обертки над shared/api/note
+│   │   │   ├── storage.ts
+│   │   │   ├── selectors.ts
+│   │   │   └── types.ts     # внутренние типы
+│   │   └── ui/
+│   │       └── NoteCard.tsx
+│   └── activity/
+│       └── ...
+└── pages/
+    └── ...
+
+```
